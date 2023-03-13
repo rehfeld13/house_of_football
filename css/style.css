@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+/* -------------------------- SETTINGS --------------------------------*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(19, 19, 59);
+}
+
+/* -------------------------- HEADER --------------------------------*/
+
+.header{
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(14,27,162);
+  background: linear-gradient(90deg, rgba(14,27,162,1) 4%, rgba(68,0,240,1) 40%, rgba(160,15,255,1) 54%, rgba(87,3,120,1) 87%);
+  box-shadow: 0px 0px 10px 5px  rgb(66, 14, 162) ;
+}
+
+.header .logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header .logo span{
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+/* -------------------------- NAV --------------------------------*/
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  margin-top: 50px;
+}
+
+.nav .list-buttons{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  list-style: none;
+}
+
+.nav .list-buttons li .btn{
+  background: rgb(17, 24, 97);
+  padding: 20px;
+  border: none;
+  border-bottom: 2px solid  rgb(66, 14, 162);
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+}
+
+.nav .list-buttons li .btn:hover{
+  cursor: pointer;
+  background:  rgb(66, 14, 162);
+  border-bottom: 2px solid  rgb(17, 24, 97) ;
+
+}
+
+
+/* -------------------------- CARDS PLAYERS --------------------------------*/
+
+
+.cards-players{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap:wrap ;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  gap: 30px;
+}
+
+.cards-players .player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    height: 370px;
+    background-color:rgb(17, 24, 97);
+    border: 2px solid  rgb(66, 14, 162);
+    border-radius: 5px;
+    box-shadow:  0px 0px 10px 1px  rgb(66, 14, 162);
+
+
+}
+
+.cards-players .player .player-img{
+  width: 200px;
+  margin-top: 10px;
+}
+
+.cards-players .player .name{
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+}
+
+.cards-players .player .info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 100%;
+  border-top: 1px solid  rgb(66, 14, 162);
+}
+
+.cards-players .player .info img{
+  width: 22px;
+  margin-top: 5px;
+}
+
+.cards-players .player .info .market-value{
+  color: white;
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+.cards-players .player .tags{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.cards-players .player .tags .tag{
+  color: white;
+  background-color:  rgb(66, 14, 162);
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 5px;
+}
+
+
+
+/* -------------------------- FOOTER --------------------------------*/
+
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
+  background: rgb(14,27,162);
+  background: linear-gradient(90deg, rgba(14,27,162,1) 4%, rgba(68,0,240,1) 40%, rgba(160,15,255,1) 54%, rgba(87,3,120,1) 87%);
+  box-shadow: 0px 0px 10px 5px  rgb(66, 14, 162);
+  color: white;
+  font-size: 15px;
+  font-weight: 300;  
+}
+
+.footer a img{
+  width: 30px;
+  margin-left: 10px;
+}
+
+
+
+
+/* -------------------------- MODO RESPONSIVO --------------------------------*/
+
+
+
+@media (max-width: 934px){
+
+  .nav .list-buttons{
+    gap: 10px;
+  }
+}
+
+@media (max-width: 800px){
+
+  .nav{
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+
+  .nav .list-buttons{
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
